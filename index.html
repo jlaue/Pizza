@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>GIS Resources Map | California Geographic Information Association</title>
+		<meta name="description" content="GIS Contacts Map for California" />
+		<meta name="keywords" content="GIS Contacts, Map, California" />
+		<meta name="author" content="maptimeLA" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/leaflet-search.css" />
+		<link rel="stylesheet" type="text/css" href="css/leaflet.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/vendor/jquery-1.11.2.min.js"></script>
+		<script src="js/vendor/tabletop.js"></script>
+		<script src="js/vendor/leaflet.js"></script>
+		<script src="js/vendor/modernizr.custom.js"></script>
+		<script src="js/vendor/leaflet.ajax.min.js"></script>
+		<script src="js/vendor/leaflet-search.js"></script>
+		<script src="js/vendor/papaparse.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<header class="clearfix">
+				<span>maptime:LA's</span>
+				<h1>Spatial List of Pizza</h1>
+				<nav>
+					<ul>
+						<li class='federal'><a href='#'>Federal</a></li>
+						<li class='state'><a href='#'>State</a></li>
+						<li class='county'><a href='#'>County</a></li>
+						<li class='city'><a href='#'>City</a></li>
+						<li class='other'><a href='#'>User Group</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<div id="big-list">
+				<form class='search'>
+					<input type="text" id="list-search" placeholder="Search">
+				</form>
+
+				<div id='results'>
+					<p class='none hide'>No results were found. Please try a different query.</p>
+					<ul id="results-list"></ul>
+				</div>
+
+				<div id="federal-title" class="list-title">Federal</div>
+				<ul id="federal-list" class="group-list"></ul>
+
+				<div id="state-title" class="list-title">State</div>
+				<ul id="state-list" class="group-list"></ul>
+
+				<div id="county-title" class="list-title">County</div>
+				<ul id="county-list" class="group-list"></ul>
+
+				<div id="city-title" class="list-title">City</div>
+				<ul id="city-list" class="group-list"></ul>
+
+				<div id="other-title" class="list-title">User Group</div>
+				<ul id="other-list" class="group-list"></ul>
+
+			</div>
+
+			<div id='map'></div>
+
+			<script src="js/main.js"></script>
+		</div>
+	</body>
+</html>
